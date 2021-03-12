@@ -67,11 +67,11 @@ Ruta_imagen,N_frame,Nombre_video,Width,Height
 
 
 ```
-outputs
+export
 |
-+--events
++--obj_train_data
 |  |
-|  +--<dia:mes>
+|  +--soccer.txt
 |     |
 |     +--benchmark_<dia:hora:min>
 |        |
