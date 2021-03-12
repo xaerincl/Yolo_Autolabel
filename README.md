@@ -44,26 +44,7 @@ Now to export the dataset:
 
 This will produce this output:
 
-```
-Ruta_imagen,N_frame,Nombre_video,Width,Height
-./output/video_1_frame_0.png,0,video_1.mp4,1920,1080
-./output/video_1_frame_278.png,278,video_1.mp4,1920,1080
-./output/video_1_frame_556.png,556,video_1.mp4,1920,1080
-./output/video_1_frame_834.png,834,video_1.mp4,1920,1080
-```
-
-# Project tree
-
-.
- * train
-   * image1.txt
-   * image2.txt
-   * ...
- * obj.data
- * obj.names
- * train.txt
- * upload.zip
- * images.zip
+![tutorial_4](/github_images/img4.png)
 
 
 ```
@@ -72,17 +53,20 @@ export
 +--obj_train_data
 |  |
 |  +--soccer.txt
-|     |
-|     +--benchmark_<dia:hora:min>
-|        |
-|        +--mask
-|        +--no_mask
-|        +--sd
-|
-+--records
 |  |
-|  +--<dia:mes>
-|     +--benchmark_draw_<dia:hora:min>.avi
+|  +--dining_table.txt
+|
+|  +--... (rest of the labels)
+|
++--obj.data
+| 
++--obj.names
+| 
++--train.txt
+| 
++--images.zip
+| 
++--upload.zip
 ```
 
 
