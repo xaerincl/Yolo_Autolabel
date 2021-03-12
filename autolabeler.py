@@ -111,11 +111,24 @@ def exportar_dataset(fnames):
 
     # move objects
 
-    copytree(values['-img_folder-'], os.path.join(values['-export-'], 'obj_train_data'))
-    try:
-        copytree(values['-label_folder-'], os.path.join(values['-export-'], 'obj_train_data'))
-    except:
-        pass
+    # 1 : move .txts
+
+    sourcefiles = os.listdir(values['-label_folder-'])
+    dest_path = os.path.join(values['-export-'], 'obj_train_data')
+    for file in sourcefiles:
+        if file.endswith('.txt'):
+            shutil.move(os.path.join(values['-label_folder-'],file), os.path.join(dest_path,file))
+
+
+    # 2 : create upload.zip with the images and move it to export folder
+    shutil.make_archive('upload', 'zip', values['-export-'])
+    shutil.move('upload.zip', os.path.join(values['-export-'], 'upload.zip'))
+
+
+    # 3 : create images.zip in the export folder
+    shutil.make_archive(os.path.join(values['-export-'], 'images') , 'zip', values['-img_folder-'])
+
+
 
     print('Done')
 
