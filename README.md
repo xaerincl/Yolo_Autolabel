@@ -131,6 +131,8 @@ Open the task and click Upload annotations YOLO 1.1 and upload the upload.zip fi
 ready to go!
 
 
+Download `yolov4.weights` file 245 MB: [yolov4.weights](https://github.com/AlexeyAB/darknet/releases/download/darknet_yolo_v3_optimal/yolov4.weights)
+
 
 
 
