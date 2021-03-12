@@ -30,13 +30,13 @@ Run:
 $ python autolabeler.py
 ```
 Now select:
-![tutorial_1](/images/img1.png)
+![tutorial_1](/github_images/img1.png)
 
 
 This will
 
 
-![tutorial_2](/images/img3.png)
+![tutorial_2](/github_images/img3.png)
 
 ```
 Ruta_imagen,N_frame,Nombre_video,Width,Height
