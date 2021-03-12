@@ -12,8 +12,8 @@ import os
 layout =    [
 
         [sg.Text('Step 1: Save labels .txt and/or save detected images')],
-        [sg.Text('Path to .weight '), sg.In('yolov3.weights',size=(40,1), key='-weight-'), sg.FileBrowse()],
-        [sg.Text('Path to .cfg    '), sg.In('yolov3.cfg',size=(40,1), key='-cfg-'), sg.FileBrowse()],
+        [sg.Text('Path to .weight '), sg.In('yolov4.weights',size=(40,1), key='-weight-'), sg.FileBrowse()],
+        [sg.Text('Path to .cfg    '), sg.In('yolov4.cfg',size=(40,1), key='-cfg-'), sg.FileBrowse()],
         [sg.Text('Path to .names  '), sg.In('coco.names',size=(40,1), key='-names-'), sg.FileBrowse()],
         [sg.Text('Image folder    '), sg.In('images',size=(40,1), key='-img_folder-'), sg.FolderBrowse()],
         [sg.Text('Save labels     '), sg.In('labels',size=(40,1), key='-label_folder-'), sg.FolderBrowse()],
