@@ -28,7 +28,11 @@ pip install PySimpleGUI
 ```
 $ python autolabeler.py
 ```
-![asdf](/images/img1.png)
+![tutorial_1](/images/img1.png)
+
+
+![tutorial_2](/images/img3.png)
+
 ```
 Ruta_imagen,N_frame,Nombre_video,Width,Height
 ./output/video_1_frame_0.png,0,video_1.mp4,1920,1080
