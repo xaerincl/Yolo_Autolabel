@@ -1,3 +1,5 @@
+![](https://user-images.githubusercontent.com/13696193/43165867-fe02e3b2-8f62-11e8-9fd0-cc7c86b11772.png)
+
 # Yolo_Autolabel
 
 
@@ -12,7 +14,11 @@ To install run:
 ```
 pip install -r requirements.txt
 ```
-
+or simply
+```
+pip install opencv_python
+pip install PySimpleGUI
+```
 
 ## How to use 
 
