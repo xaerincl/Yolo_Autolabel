@@ -68,20 +68,23 @@ export
 
 
 
-images and upload.zip files are ready to be uploaded to CVAT if you need to edit the labels.
+images and upload.zip files are ready to be uploaded to CVAT if you need to edit the labels or export into another format.
 
 
-## How to upload labels to CVAT (to edit or export into another format)
+## How to upload labels to CVAT
 
 
 Create project
+![tutorial_5](/github_images/img5.png)
 copy .txt into raw
 done
 submit
 create task
+![tutorial_5](/github_images/img6.png)
 upload images.zip
 upload annotations yolo 1.1
 upload upload.zip
+![tutorial_5](/github_images/img7.png)
 
 ready to go!
 
