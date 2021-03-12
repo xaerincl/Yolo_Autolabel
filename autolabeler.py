@@ -15,7 +15,7 @@ layout =    [
         [sg.Text('Path to .weight '), sg.In('yolov3.weights',size=(40,1), key='-weight-'), sg.FileBrowse()],
         [sg.Text('Path to .cfg    '), sg.In('yolov3.cfg',size=(40,1), key='-cfg-'), sg.FileBrowse()],
         [sg.Text('Path to .names  '), sg.In('coco.names',size=(40,1), key='-names-'), sg.FileBrowse()],
-        [sg.Text('Image folder    '), sg.In('imagenes',size=(40,1), key='-img_folder-'), sg.FolderBrowse()],
+        [sg.Text('Image folder    '), sg.In('images',size=(40,1), key='-img_folder-'), sg.FolderBrowse()],
         [sg.Text('Save labels     '), sg.In('labels',size=(40,1), key='-label_folder-'), sg.FolderBrowse()],
         [sg.Text('Save infer imgs '), sg.In('detections',size=(40,1), key='-img_infer-'), sg.FolderBrowse()],
         [sg.Text('Confidence'), sg.Slider(range=(0,1),orientation='h', resolution=.1, default_value=.3, size=(15,15), key='-confidence-')],
@@ -25,7 +25,7 @@ layout =    [
             sg.CB('Save image', default = False, enable_events = True, key = '-img_save-')],
         [sg.Button('Run')],
         [sg.Text('_'*60)],
-        [sg.Txt('Step 2: Export dataset in YOLO format ready to train')],
+        [sg.Txt('Step 2 (optional) : Export dataset in YOLO format ready to train')],
         [sg.Text('Export dataset: '), sg.In('export',size=(40,1), key='-export-'), sg.FolderBrowse()],
         [sg.Button('Export')]
             ]
@@ -76,8 +76,8 @@ def exportar_dataset(fnames):
     if not os.path.exists(values['-export-']):
         os.makedirs(values['-export-'])
 
-    if not os.path.exists(os.path.join(values['-export-'], 'train')):
-        os.makedirs(os.path.join(values['-export-'], 'train'))
+    if not os.path.exists(os.path.join(values['-export-'], 'obj_train_data')):
+        os.makedirs(os.path.join(values['-export-'], 'obj_train_data'))
 
     # create obj.data
     with open(values['-cfg-'], 'r') as searchfile:
@@ -104,16 +104,16 @@ def exportar_dataset(fnames):
 
     # create train.txt
 
-    prefix = 'data/train/'
+    prefix = 'obj_train_data/'
     with open(os.path.join(values['-export-'], 'train.txt'), "w") as file_object:
         for i in fnames:
             file_object.write(prefix + i + '\n')
 
     # move objects
 
-    copytree(values['-img_folder-'], os.path.join(values['-export-'], 'train'))
+    copytree(values['-img_folder-'], os.path.join(values['-export-'], 'obj_train_data'))
     try:
-        copytree(values['-label_folder-'], os.path.join(values['-export-'], 'train'))
+        copytree(values['-label_folder-'], os.path.join(values['-export-'], 'obj_train_data'))
     except:
         pass
 
