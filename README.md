@@ -25,10 +25,15 @@ pip install PySimpleGUI
 
 ## How to use 
 
+Run:
 ```
 $ python autolabeler.py
 ```
+Now select:
 ![tutorial_1](/images/img1.png)
+
+
+This will
 
 
 ![tutorial_2](/images/img3.png)
