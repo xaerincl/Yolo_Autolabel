@@ -56,12 +56,34 @@ Ruta_imagen,N_frame,Nombre_video,Width,Height
 
 .
  * train
-   * image1.jpg
    * image1.txt
+   * image2.txt
    * ...
  * obj.data
  * obj.names
  * train.txt
+ * upload.zip
+ * images.zip
+
+
+```
+outputs
+|
++--events
+|  |
+|  +--<dia:mes>
+|     |
+|     +--benchmark_<dia:hora:min>
+|        |
+|        +--mask
+|        +--no_mask
+|        +--sd
+|
++--records
+|  |
+|  +--<dia:mes>
+|     +--benchmark_draw_<dia:hora:min>.avi
+```
 
 
 
