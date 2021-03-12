@@ -76,15 +76,26 @@ images and upload.zip files are ready to be uploaded to CVAT if you need to edit
 
 Create project
 ![tutorial_5](/github_images/img5.png)
-copy .txt into raw
-done
+
+
+copy labels_to_cvat.txt into raw and click Done
+
 submit
-create task
+
+create task and upload images.zip
 ![tutorial_5](/github_images/img6.png)
-upload images.zip
-upload annotations yolo 1.1
-upload upload.zip
+
+
+submit
+
+Open the task and click Upload annotations YOLO 1.1 and upload the upload.zip file
+
+
+
 ![tutorial_5](/github_images/img7.png)
+
+
+
 
 ready to go!
 
