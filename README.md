@@ -54,7 +54,6 @@ Ruta_imagen,N_frame,Nombre_video,Width,Height
 
 # Project tree
 
-```
 .
  * train
    * image1.jpg
@@ -63,7 +62,7 @@ Ruta_imagen,N_frame,Nombre_video,Width,Height
  * obj.data
  * obj.names
  * train.txt
-```
+
 
 
 ## Autores ✒️
