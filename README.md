@@ -1,8 +1,3 @@
-![](https://user-images.githubusercontent.com/13696193/43165867-fe02e3b2-8f62-11e8-9fd0-cc7c86b11772.png)
-
-
-
-
 # Yolo_Autolabel
 
 
@@ -67,7 +62,29 @@ export
 +--images.zip
 | 
 +--upload.zip
+| 
++--labels_to_cvat.txt
 ```
+
+
+
+images and upload.zip files are ready to be uploaded to CVAT if you need to edit the labels.
+
+
+## How to upload labels to CVAT (to edit or export into another format)
+
+
+Create project
+copy .txt into raw
+done
+submit
+create task
+upload images.zip
+upload annotations yolo 1.1
+upload upload.zip
+
+ready to go!
+
 
 
 
