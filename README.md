@@ -29,15 +29,27 @@ Now select:
 
 
 This will produce this output:
+
+
 ![tutorial_2](/github_images/img2.png)
+
+
 
 The images with the detected objects (if 'Save image' is selected) and the labels for every image (if Save label is selected)
 
+
+
 Now to export the dataset:
+
+
 
 ![tutorial_3](/github_images/img3.png)
 
+
+
 This will produce this output:
+
+
 
 ![tutorial_4](/github_images/img4.png)
 
@@ -75,20 +87,37 @@ images and upload.zip files are ready to be uploaded to CVAT if you need to edit
 
 
 Create project
+
+
 ![tutorial_5](/github_images/img5.png)
+
+
 
 
 copy labels_to_cvat.txt into raw and click Done
 
+
+
 submit
 
+
+
 create task and upload images.zip
+
+
 ![tutorial_5](/github_images/img6.png)
 
 
+
+
 submit
 
+
+
+
 Open the task and click Upload annotations YOLO 1.1 and upload the upload.zip file
+
+
 
 
 
@@ -97,7 +126,10 @@ Open the task and click Upload annotations YOLO 1.1 and upload the upload.zip fi
 
 
 
+
+
 ready to go!
+
 
 
 
