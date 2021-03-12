@@ -33,10 +33,16 @@ Now select:
 ![tutorial_1](/github_images/img1.png)
 
 
-This will
+This will produce this output:
+![tutorial_2](/github_images/img2.png)
 
+The images with the detected objects (if 'Save image' is selected) and the labels for every image (if Save label is selected)
 
-![tutorial_2](/github_images/img3.png)
+Now to export the dataset:
+
+![tutorial_3](/github_images/img3.png)
+
+This will produce this output:
 
 ```
 Ruta_imagen,N_frame,Nombre_video,Width,Height
